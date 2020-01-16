@@ -12,6 +12,8 @@ namespace Task1
         /// </summary>
         /// <param name="str">Input string.</param>
         /// <returns>Vovels count.</returns>
+        /// <exception cref="ArgumentNullException">Thrown when str equals null.</exception>
+        /// <exception cref="ArgumentException">Thrown when str is String.Empty.</exception>
         public static int GetVowelCount(string str)
         {
             if (str == null)

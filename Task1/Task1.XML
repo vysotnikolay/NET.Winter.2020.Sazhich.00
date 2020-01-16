@@ -4,5 +4,19 @@
         <name>Task1</name>
     </assembly>
     <members>
+        <member name="T:Task1.StringHelper">
+            <summary>
+            Provides static methods strings.
+            </summary>
+        </member>
+        <member name="M:Task1.StringHelper.GetVowelCount(System.String)">
+            <summary>
+            Returns the vowels count contained in the input string.
+            </summary>
+            <param name="str">Input string.</param>
+            <returns>Vovels count.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when str equals null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when str is String.Empty.</exception>
+        </member>
     </members>
 </doc>

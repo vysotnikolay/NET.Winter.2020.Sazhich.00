@@ -4,5 +4,19 @@
         <name>Task2</name>
     </assembly>
     <members>
+        <member name="T:Task2.IntegerExtensions">
+            <summary>
+            Provide methods with integers.
+            </summary>
+        </member>
+        <member name="M:Task2.IntegerExtensions.GetGcd(System.Int32,System.Int32)">
+            <summary>
+            Returns the GCD of two integers.
+            </summary>
+            <param name="a">First integer.</param>
+            <param name="b">Second integer.</param>
+            <returns>The GSD value.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when two numbers are 0 at the same time. -or- Thrown when two numbers are 0 and int.MinValue at the same time.</exception>
+        </member>
     </members>
 </doc>
