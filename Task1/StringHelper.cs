@@ -27,16 +27,13 @@ namespace Task1
             }
 
             int vovelCounter = 0;
-            char[] vovelSymbolsArray = new char[] { 'a', 'e', 'i', 'o', 'u' };
-            char[] strCharsArray = str.ToCharArray();
-            for (int i = 0; i < vovelSymbolsArray.Length; i++)
+            string vovelSymbols = "aeiou";
+            int strLength = str.Length; // оптимизация, чтобы длина строки не вычислялась на каждой итерации
+            for (int i = 0; i < strLength; i++)
             {
-                for (int j = 0; j < strCharsArray.Length; j++)
+                if (vovelSymbols.Contains(str[i], StringComparison.OrdinalIgnoreCase))
                 {
-                    if (vovelSymbolsArray[i] == strCharsArray[j])
-                    {
-                        vovelCounter++;
-                    }
+                    vovelCounter++;
                 }
             }
 
